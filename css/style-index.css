@@ -1,0 +1,111 @@
+body {
+    background-color: rgb(20, 20, 20);
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+
+h3 {
+    color: white;
+}
+
+h4 {
+    color: white;
+}
+
+h5 {
+    color: white;
+}
+
+h6 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+.white-class {
+    color: white;
+}
+
+#nav {
+    height: 6em;
+    display: flex;
+    background: rgb(30, 30, 30);
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0px;
+
+}
+
+.nav-item {
+    background: rgb(79, 114, 81);
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+
+    border-radius: 5px;
+    width: 5em;
+    line-height: 60px;
+    margin: 15px;
+    text-decoration: none;
+}
+
+#container {
+    display: flex;
+    margin: 0px;
+}
+
+#weeks {
+    display: flex;
+    background: rgb(30, 30, 30);
+    height: 50pc;
+    width: 130px;
+    text-align: center;
+    justify-content: center;
+}
+
+#content-container {
+    display: flex;
+    width: 50pc;
+    background: blue;
+    flex-direction: column;
+}
+
+.content {
+    display: flex;
+    height: 12pc;
+    width: 20pc;
+    flex-direction: column;
+    background-color: brown;
+    border: 5px solid green;
+}
+
+.content-caption {
+    display: flex;
+    height: 12pc;
+    width: 20pc;
+    flex-direction: column;
+    background-color: brown;
+    border: 5px solid green;
+    align-items: flex-end;
+}
+
+#acc-button {
+    height: 55px;
+    border: 1px solid green;
+    margin: 15px;
+    transition: all 150ms;
+}
+
+#acc-button:hover {
+    height: 60px;
+}
