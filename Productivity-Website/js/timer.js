@@ -28,7 +28,6 @@ console.log(times);
 
 
 
-
 let habits = localStorage.getItem('habits');
 if (habits == null) {
     habits = [];
