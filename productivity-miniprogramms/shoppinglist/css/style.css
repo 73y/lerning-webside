@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(20, 20, 20);
+    font-family: 'Roboto', sans-serif;
+    color: rgb(202, 202, 202);
+}
+
+#main {
+    display: grid;
+    margin: 10em 10em 5em 10em;
+
+    height: 5em;
+    width: 30em;
+
+
+}
+
+button {
+    margin: 2em;
+    height: 2.5em;
+    width: 8em;
+}
+
+#list-div {
+    margin-left: 7em;
+    font-size: 1.5em;
+}
+
+li {
+    margin: 0.2em;
+}
