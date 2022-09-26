@@ -11,14 +11,18 @@ stopButton.addEventListener('click', stop)
 restartButton.addEventListener('click', restart)
 
 //variables
+let timesCounter = 0;
 let x = [];
-let times = localStorage.getItem('times');
-if (times == null) {
-    times = [];
+let storageTimes = localStorage.getItem('times');
+let times = [];
+//local Starage entwirren
+if (storageTimes == null) {
+    storageTimes = [];
 } else {
-    times = times.split(',');
-    for (let i of times) {
-        
+    storageTimes = storageTimes.split(',');
+    for (let i of storageTimes) {
+        times[timesCounter] = [storageTimes.splice(0, 1), storageTimes.splice(0, 1), storageTimes.splice(0, 1),]
+        timesCounter++
     }
 }
 
@@ -124,10 +128,12 @@ let habitCounter = 0;
 //elements
 const text = document.getElementById('liste');
 const addButton = document.getElementById('add');
+const saveButton = document.getElementById('save');
 let saveQuestion = '';
 
 //eventlisteners
 addButton.addEventListener('click', addHabit);
+saveButton.addEventListener('click', save);
 
 
 
@@ -173,3 +179,9 @@ function selectButton (counter) {
     console.log(counter);
 }
 habitScreen(habits)
+
+function save () {
+    localStorage.setItem('times', times);
+    localStorage.setItem('habits', habits);
+    console.log(times)
+}
