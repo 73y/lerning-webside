@@ -1,22 +1,46 @@
-const userInput = document.getElementById('textfield')
-const addButton = document.getElementById('addButton')
-const ullist = document.getElementById('ullist')
+//zutaten
+const zutatmainlist = document.getElementById('zutatmainlist');
+let zutatList = [];
 
-let list = [];
-
-addButton.addEventListener('click', addItem)
-
-function addItem () {
-    list.push(userInput.value)
-    listScreen()
+//zutaten erstellen
+function zutat (name, menge, preis) {
+    this.name = name;
+    this.menge = menge;
+    this.preis = preis;
 }
 
-function listScreen () {
-    ullist.innerHTML = ""
-    for (let i of list) {
-        ullist.innerHTML += `
-        <li>${i}<button>-</button></li>
-        `;
-        
+
+function zutatScreen () {
+    zutatmainlist.innerHTML = '';
+    for (let i of zutatList) {
+        console.log(i)
+        zutatmainlist.innerHTML += `<tr><td>${i.name}</td><td>${i.menge}</td><td>${i.preis}</td></tr>`;
     }
 }
+zutatScreen()
+
+
+const addZutat = document.getElementById('add-zutat')
+addZutat.addEventListener('click', addZutatToList)
+
+
+function addZutatToList () {
+    const name = prompt("Name der Zutat:")
+    const menge = prompt("menge der Zutat:")
+    const preis = prompt("preis der Zutat:")
+    zutatList.push(new zutat(name, menge, preis))
+    zutatScreen()
+}
+
+
+
+
+//rezepte
+
+
+
+//einkaufsliste
+
+
+
+//bestand

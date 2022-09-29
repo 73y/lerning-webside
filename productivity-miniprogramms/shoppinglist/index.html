@@ -9,9 +9,65 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script type="text/javascript" src="js/app.js" defer></script>
 </head>
 <body>
+    <div class="grid-container">
+        <header class="grid-item"><h2>Einkaufsliste 2.0</h2></header>
+
+        <div class="grid-item" id="mainlist">
+            <h2>Zutaten</h2>
+            <table>
+                <thead id="mainlist-thead">
+                    <tr>
+                        <th>Zutaten</th>
+                        <th>Menge</th>
+                        <th>Preis</th>
+                    </tr>
+                </thead>
+                <tbody id="zutatmainlist">
+                </tbody>
+            </table>
+            <button id="add-zutat">+</button>
+        </div>
+
+        <div class="grid-item" id="einkaufsliste">
+            <h2 class="grid-item">Einkaufsliste</h2>
+            <table>
+                <thead>
+                    <tr class="table-grid-item">
+                        <th>Zutat</th>
+                        <th>Stück</th>
+                        <th>Preis</th>
+                    </tr>
+                </thead>
+                <tbody id="einkaufsliste">
+
+                </tbody>
+            </table>
+        </div>
+
+        <div class="grid-item" id="bestand">
+            <h2 class="grid-item">Bestand</h2>
+            <table>
+                <thead>
+                    <tr class="table-grid-item">
+                        <th>Zutat</th>
+                        <th>Stück</th>
+                        <th>Preis</th>
+                    </tr>
+                </thead>
+                <tbody id="bestandsliste">
+                </tbody>
+            </table>
+        </div>
+
+        <!--<footer class="grid-item">footer</footer>-->
+    </div>
+
+
+
+
+    <!--
     <div id="main">
         <input type="text" name="" id="textfield">
         <button id="addButton">add</button>
@@ -20,5 +76,7 @@
         <h2>Items:</h2>
         <ul id="ullist"></ul>
     </div>
+    -->
+    <script type="text/javascript" src="js/app.js" defer></script>
 </body>
 </html>

@@ -4,15 +4,40 @@ body {
     color: rgb(202, 202, 202);
 }
 
-#main {
+.grid-container {
     display: grid;
-    margin: 10em 10em 5em 10em;
-
-    height: 5em;
-    width: 30em;
-
-
+    margin: 3em;
+    grid-template-areas:
+        "topbar     topbar          topbar"
+        "mainlist   einkaufsliste   bestand"
+        "footer     footer          footer";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px auto 100px;
+    justify-content: center;
+    gap: 0 50px;
 }
+
+.grid-item {
+    font-size: 1.5em;
+    display: grid;
+    justify-content: center;
+    padding: 0;
+    margin: 0.3em;
+    background-color: rgb(105, 105, 105);
+}
+
+header { grid-area: topbar; align-items: center;}
+#mainlist { grid-area: mainlist; }
+#einkaufsliste { grid-area: einkaufsliste; }
+#bestand { grid-area: bestand; }
+footer { grid-area: footer; }
+
+
+td, th {
+    border: 1px solid rgb(241, 241, 241);
+}
+
+
 
 button {
     margin: 2em;
@@ -27,4 +52,13 @@ button {
 
 li {
     margin: 0.2em;
+}
+
+.delete-button {
+    height: 2em;
+    width: 2.5em;
+}
+
+h2 {
+    font-size: 1.4em;
 }
