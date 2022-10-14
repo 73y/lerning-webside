@@ -11,30 +11,33 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+    <header>
+        <h2>Einkaufsliste 2.0</h2>
+    </header>
     <div class="grid-container">
-        <header class="grid-item"><h2>Einkaufsliste 2.0</h2></header>
 
-        <div class="grid-item" id="mainlist">
-            <h2>Zutaten</h2>
+        <div id="main">
+            <h2>Zutaten<button id="switchToRezepte">Rezepte --></button></h2>
             <table>
-                <thead id="mainlist-thead">
+                <thead>
                     <tr>
                         <th>Zutaten</th>
                         <th>Menge</th>
                         <th>Preis</th>
                     </tr>
                 </thead>
-                <tbody id="zutatmainlist">
+                <tbody id="mainzutaten">
+
                 </tbody>
             </table>
-            <button id="add-zutat">+</button>
+            <button id="addZutat">+</button>
         </div>
 
-        <div class="grid-item" id="einkaufsliste">
-            <h2 class="grid-item">Einkaufsliste</h2>
+        <div id="einkaufsliste">
+            <h2>Einkaufsliste</h2>
             <table>
                 <thead>
-                    <tr class="table-grid-item">
+                    <tr>
                         <th>Zutat</th>
                         <th>Stück</th>
                         <th>Preis</th>
@@ -46,37 +49,24 @@
             </table>
         </div>
 
-        <div class="grid-item" id="bestand">
-            <h2 class="grid-item">Bestand</h2>
+        <div id="bestand">
+            <h2>Bestand</h2>
             <table>
                 <thead>
-                    <tr class="table-grid-item">
+                    <tr>
                         <th>Zutat</th>
                         <th>Stück</th>
                         <th>Preis</th>
                     </tr>
                 </thead>
                 <tbody id="bestandsliste">
+
                 </tbody>
             </table>
         </div>
 
-        <!--<footer class="grid-item">footer</footer>-->
+        <!--<footer>footer</footer>-->
     </div>
-
-
-
-
-    <!--
-    <div id="main">
-        <input type="text" name="" id="textfield">
-        <button id="addButton">add</button>
-    </div>
-    <div id="list-div">
-        <h2>Items:</h2>
-        <ul id="ullist"></ul>
-    </div>
-    -->
     <script type="text/javascript" src="js/app.js" defer></script>
 </body>
 </html>

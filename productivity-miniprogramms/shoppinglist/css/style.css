@@ -2,63 +2,17 @@ body {
     background-color: rgb(20, 20, 20);
     font-family: 'Roboto', sans-serif;
     color: rgb(202, 202, 202);
+    font-size: 2em;
 }
 
 .grid-container {
     display: grid;
-    margin: 3em;
-    grid-template-areas:
-        "topbar     topbar          topbar"
-        "mainlist   einkaufsliste   bestand"
-        "footer     footer          footer";
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100px auto 100px;
-    justify-content: center;
-    gap: 0 50px;
+    grid-template-rows: 100px 200px;
+    justify-items: center;
 }
 
-.grid-item {
-    font-size: 1.5em;
+header {
     display: grid;
-    justify-content: center;
-    padding: 0;
-    margin: 0.3em;
-    background-color: rgb(105, 105, 105);
-}
-
-header { grid-area: topbar; align-items: center;}
-#mainlist { grid-area: mainlist; }
-#einkaufsliste { grid-area: einkaufsliste; }
-#bestand { grid-area: bestand; }
-footer { grid-area: footer; }
-
-
-td, th {
-    border: 1px solid rgb(241, 241, 241);
-}
-
-
-
-button {
-    margin: 2em;
-    height: 2.5em;
-    width: 8em;
-}
-
-#list-div {
-    margin-left: 7em;
-    font-size: 1.5em;
-}
-
-li {
-    margin: 0.2em;
-}
-
-.delete-button {
-    height: 2em;
-    width: 2.5em;
-}
-
-h2 {
-    font-size: 1.4em;
+    place-items: center;
 }
