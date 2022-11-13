@@ -1,18 +1,15 @@
-body {
-    background-color: rgb(20, 20, 20);
-    font-family: 'Roboto', sans-serif;
-    color: rgb(202, 202, 202);
-    font-size: 2em;
-}
+
 
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 100px 200px;
     justify-items: center;
+    font-size: 2em;
 }
 
 header {
     display: grid;
     place-items: center;
+    font-size: 2em;
 }
