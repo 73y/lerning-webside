@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/list.css">
+    <link rel="stylesheet" type="text/css" href="/css/main-navbar.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="brand-title">Brand name</div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="/users/login">Login</a></li>
+                <li><a href="/list">List</a></li>
+                <li><a href="/timer">Timer</a></li>
+                <li><a href="/notes">Notes</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <h2>Einkaufsliste 2.0</h2>
+    </header>
+    <div class="grid-container">
+
+        <div id="main">
+            <h2>Zutaten<button id="switchToRezepte">Rezepte --></button></h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Zutaten</th>
+                        <th>Menge</th>
+                        <th>Preis</th>
+                    </tr>
+                </thead>
+                <tbody id="mainzutaten">
+
+                </tbody>
+            </table>
+            <button id="addZutat">+</button>
+        </div>
+
+        <div id="einkaufsliste">
+            <h2>Einkaufsliste</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Zutat</th>
+                        <th>Stück</th>
+                        <th>Preis</th>
+                    </tr>
+                </thead>
+                <tbody id="einkaufsliste">
+
+                </tbody>
+            </table>
+        </div>
+
+        <div id="bestand">
+            <h2>Bestand</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Zutat</th>
+                        <th>Stück</th>
+                        <th>Preis</th>
+                    </tr>
+                </thead>
+                <tbody id="bestandsliste">
+
+                </tbody>
+            </table>
+        </div>
+
+        <!--<footer>footer</footer>-->
+    </div>
+    <script type="text/javascript" src="/scripts/list.js" defer></script>
+    <script src="./scripts/main-navbar.js"></script>
+</body>
+</html>

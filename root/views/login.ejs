@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/css/main-navbar.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="brand-title">Brand name</div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="/users/login">Login</a></li>
+                <li><a href="/list">List</a></li>
+                <li><a href="/timer">Timer</a></li>
+                <li><a href="/notes">Notes</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <h1>Login</h1>
+
+        <form action="/login" method="POST">
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <a href="/users/register">Register</a>
+    </main>
+    <script src="./scripts/main-navbar.js"></script>
+</body>
+</html>
