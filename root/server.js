@@ -16,10 +16,6 @@ app.get('/', (req, res) =>{
     res.render('index.ejs');
 });
 
-app.get('/list', (req, res) => {
-    res.render('list.ejs');
-})
-
 app.get('/timer',(req, res) => {
     res.render('timer.ejs');
 })
@@ -28,10 +24,16 @@ app.get('/notes',(req, res) => {
     res.render('notes.ejs')
 })
 
+app.get('/versuch',(req, res) => {
+    res.render('list/ingredients.ejs')
+})
+
 
 const userRouter = require('./routes/users')
+const listRouter = require('./routes/list')
 
 app.use('/users', userRouter)
+app.use('/list', listRouter)
 
 
 app.listen(3000);
